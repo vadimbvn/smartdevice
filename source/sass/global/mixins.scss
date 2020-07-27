@@ -1,0 +1,20 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin font-base {
+  font-family: "Roboto Condensed", "PT Mono", "Arial", "Courier", monospace, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin roboto {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+@mixin mono {
+  font-family: "PT Mono", "Courier", monospace;
+  font-style: normal;
+}

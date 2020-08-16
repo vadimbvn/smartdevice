@@ -1,31 +1,35 @@
 html {
   height: 100%;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 body {
-  @include font-base;
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  min-width: 320px;
   height: 100%;
-  background-color: $white;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto Condensed", "PT Mono", "Arial", "Courier", monospace, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   color: $text-color;
+  background-color: $white;
 }
 
-a {
-  text-decoration: none;
+.page-main {
+  flex: 1 0 auto;
+  overflow: hidden;
+}
+
+.page-footer {
+  flex-shrink: 0;
+  overflow: hidden;
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+

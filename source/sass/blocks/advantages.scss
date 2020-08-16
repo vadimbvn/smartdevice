@@ -1,0 +1,239 @@
+.advantages {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 110px;
+  padding-left: 144px;
+  padding-right: 144px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+
+  &::after {
+    @include pseudo;
+    top: 460px;
+    left: 50%;
+    width: 250px;
+    height: 280px;
+    margin-left: 48.2%;
+    background-image: url("../img/small-triangle.svg");
+    background-repeat: no-repeat;
+    background-size: 260px 260px;
+    z-index: -1;
+  }
+}
+
+.advantages__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &::after {
+    @include pseudo;
+    bottom: 467px;
+    left: 50%;
+    width: 250px;
+    height: 280px;
+    margin-left: -65.4%;
+    background-image: url("../img/small-triangle.svg");
+    background-size: 260px 260px;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: rotate(180deg);
+  }
+
+  &::before {
+    @include pseudo;
+    bottom: -90px;
+    left: 50%;
+    width: 558px;
+    height: 562px;
+    margin-left: -28%;
+    background-image: url("../img/polygon.svg");
+    background-repeat: no-repeat;
+    background-size: 558px 562px;
+    z-index: -1;
+  }
+}
+
+.advantages-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 48.56%;
+  min-height: 299px;
+  margin-bottom: 30px;
+  margin-right: 1.56%;
+  padding-top: 40px;
+  padding-bottom: 38px;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  background-color: $white;
+  border: 1px solid $border-color;
+  border-left: none;
+  box-shadow: -2px 0 0 $blue-color;
+
+  &:hover {
+    color: $white;
+    background-color: $blue-color;
+    border-top: 1px solid $blue-color;
+  }
+}
+
+.advantages-card:nth-child(2n) {
+  margin-right: 0;
+}
+
+.advantages-card__icon-svg {
+  fill: $blue-color;
+}
+
+.advantages-card:hover h2 {
+  color: $white;
+}
+
+.advantages-card:hover .advantages-card__icon-svg {
+  fill: $white;
+}
+
+.advantages-card h2 {
+  @include roboto;
+  margin-top: 19px;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  color: $blue-color;
+}
+
+.advantages-card p {
+  @include mono;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.advantages-card__icon-svg--hired {
+  width: 35px;
+  height: 35px;
+}
+
+.advantages-card__icon-svg--detective {
+  width: 36px;
+  height: 31px;
+}
+
+.advantages-card__icon-svg--personalization {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: $desktop-width) {
+  .advantages {
+    padding-top: 54px;
+    padding-bottom: 18px;
+    padding-left: 3.12%;
+    padding-right: 3.12%;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .advantages__wrapper {
+    justify-content: center;
+
+    &::before {
+      bottom: -155px;
+      width: 570px;
+      height: 570px;
+      margin-left: -106px;
+      background-size: 570px 570px;
+      background-image: url("../img/polygon.svg");
+      transform: rotate(0);
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .advantages-card {
+    width: 47.5%;
+    min-height: 232px;
+    margin-bottom: 32px;
+    margin-left: 0;
+    margin-right: 30px;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 10px;
+  }
+
+  .advantages-card:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .advantages-card h2 {
+    margin-top: 6px;
+    margin-bottom: 8px;
+  }
+
+  .advantages-card p {
+    width: 95%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages {
+    width: 100%;
+    padding-top: 37px;
+    padding-bottom: 32px;
+    padding-left: 4.7%;
+    padding-right: 4.7%;
+  }
+
+  .advantages__wrapper {
+    width: 100%;
+
+    &::before {
+      left: -50%;
+      margin-left: 27%;
+    }
+  }
+
+  .advantages-card {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+    padding-top: 23px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+    padding-right: 10px;
+  }
+
+  .advantages-card h2 {
+    width: 92%;
+    margin-top: 11px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .advantages-card p {
+    width: 98%;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .advantages-card--hired p {
+    width: 98.3%;
+  }
+}
+

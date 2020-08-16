@@ -1,0 +1,118 @@
+.sub__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 110px;
+}
+
+.sub p {
+  @include mono;
+  position: relative;
+  white-space: nowrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 25px;
+  color: rgba($black, 0.5);
+}
+
+.sub h2 {
+  @include roboto;
+  display: block;
+  width: 200px;
+  margin-bottom: 25px;
+  margin-left: 0;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: normal;
+  letter-spacing: 0.8px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.sub__link {
+  @include mono;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 25px;
+  color: rgba($black, 0.5);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: rgba($black, 0.3);
+  }
+
+  &:active {
+    color: $blue-color;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .sub__list {
+    width: 290px;
+    height: auto;
+  }
+
+  .sub h2 {
+    margin-top: 29px;
+    margin-bottom: 25px;
+  }
+
+  .sub p {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .sub {
+    position: relative;
+    padding-top: 21px;
+    padding-bottom: 6px;
+
+    &::after {
+      @include pseudo;
+      bottom: 6px;
+      left: -100px;
+      width: 1000px;
+      height: 1px;
+      background-color: rgba($black, 0.2);
+    }
+  }
+
+  .sub p {
+    width: 215px;
+    margin-bottom: 0;
+    white-space: normal;
+  }
+
+  .sub h2 {
+    width: 290px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+
+  .sub__list {
+    width: 290px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 27px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .sub__list {
+    display: none;
+    overflow: hidden;
+  }
+
+  .no-js .sub__list {
+    display: block;
+    overflow: visible;
+  }
+}

@@ -4,12 +4,6 @@
   list-style: none;
 }
 
-@mixin font-base {
-  font-family: "Roboto Condensed", "PT Mono", "Arial", "Courier", monospace, sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-}
-
 @mixin roboto {
   font-family: "Roboto Condensed", "Arial", sans-serif;
 }
@@ -17,4 +11,35 @@
 @mixin mono {
   font-family: "PT Mono", "Courier", monospace;
   font-style: normal;
+}
+
+@mixin pseudo {
+  position: absolute;
+  content: "";
+}
+
+@mixin placeholder {
+  @include mono;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+@mixin button {
+  @include roboto;
+  box-sizing: border-box;
+  width: 287px;
+  margin: 0 auto;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    opacity: 0.7;
+  }
 }

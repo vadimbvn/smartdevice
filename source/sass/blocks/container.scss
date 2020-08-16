@@ -1,0 +1,28 @@
+.container {
+  box-sizing: border-box;
+  min-width: 1024px;
+  max-width: 1460px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: $desktop-width) {
+  .container {
+    min-width: 720px;
+    max-width: 1023px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .container {
+    min-width: 290px;
+    max-width: 650px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

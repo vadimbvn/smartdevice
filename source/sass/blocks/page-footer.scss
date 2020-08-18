@@ -89,6 +89,10 @@
   width: 500px;
 }
 
+.page-footer__accordion-link {
+  display: none;
+}
+
 .page-footer__accordion-sub--margin-left {
   width: 350px;
   margin-left: 16.8%;
@@ -110,7 +114,8 @@
   padding-left: 1.1%;
 }
 
-.page-footer__link-agreement {
+.page-footer__link-agreement,
+.page-footer__link-studio {
   @include mono;
   margin-left: 3.6%;
   font-size: 13px;
@@ -327,16 +332,18 @@
     cursor: pointer;
   }
 
-  .no-js .page-footer__accordion .sub > .page-footer__accordion-link::before,
-  .no-js .page-footer__accordion .sub > .page-footer__accordion-link.active::before {
-    display: none;
-  }
-
   .page-footer__accordion-link {
     @include pseudo;
+    display: block;
     top: -10px;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 74px;
+    border: none;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
   }
 }

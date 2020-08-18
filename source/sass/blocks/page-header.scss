@@ -9,23 +9,6 @@
   overflow: hidden;
 }
 
-.no-webp .page-header,
-.no-js .page-header {
-  background-image: url("../img/index-background-desktop@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-desktop@2x.jpg");
-  }
-}
-
-.webp .page-header {
-  background-image: url("../img/index-background-desktop@1x.webp");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-desktop@2x.webp");
-  }
-}
-
 .page-header__wrapper {
   position: relative;
   display: flex;
@@ -54,23 +37,6 @@
   }
 }
 
-.no-webp .page-header__wrapper-block::before,
-.no-js .page-header__wrapper-block::before {
-  background-image: url("../img/motherboard@1x.png"), url("../img/2-triangle.svg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/motherboard@2x.png"), url("../img/2-triangle.svg");
-  }
-}
-
-.webp .page-header__wrapper::before {
-  background-image: url("../img/motherboard@1x.webp"), url("../img/2-triangle.svg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/motherboard@2x.webp"), url("../img/2-triangle.svg");
-  }
-}
-
 .page-header__logo {
   display: block;
   width: 202px;
@@ -84,16 +50,6 @@
     height: 52px;
     background-size: 202px 52px;
   }
-}
-
-.no-js .page-header__logo img {
-  display: none;
-}
-
-.no-js .page-header__logo {
-  width: 202px;
-  height: 52px;
-  background-image: url("../img/logo-header.svg");
 }
 
 .page-header__mail-svg {
@@ -114,7 +70,7 @@
   &::after {
     @include mono;
     position: absolute;
-    content: "info@sd.ru";
+    content: "";
     top: 0;
     left: 26%;
     width: 96px;
@@ -128,6 +84,15 @@
   &:hover {
     opacity: 0.7;
   }
+}
+
+.page-header__mail span {
+  @include mono;
+  display: block;
+  margin-top: -22px;
+  margin-left: 38px;
+  line-height: 18px;
+  color: $white;
 }
 
 .page-header__mail:active::after,
@@ -149,12 +114,13 @@
   margin-left: 5.7%;
   padding-right: 13.8%;
   margin-right: 0.9%;
+  text-decoration: none;
   cursor: pointer;
 
   &::after {
     @include mono;
     position: absolute;
-    content: "+7 (495) 000 52 52";
+    content: "";
     top: 0;
     left: 16%;
     width: 184px;
@@ -169,6 +135,16 @@
   &:hover {
     opacity: 0.7;
   }
+}
+
+.page-header__phone span {
+  @include mono;
+  display: block;
+  margin-top: -22px;
+  margin-left: 38px;
+  width: 180px;
+  line-height: 18px;
+  color: $white;
 }
 
 .page-header__mail-svg,
@@ -188,8 +164,10 @@
   height: 45px;
   margin-top: 9px;
   margin-left: 2%;
+  padding-top: 12px;
   font-size: 14px;
   line-height: 16px;
+  text-decoration: none;
   white-space: nowrap;
   color: $white;
   border: 1px solid $white;
@@ -327,23 +305,6 @@
     background-position: 50% 0;
   }
 
-  .no-webp .page-header,
-  .no-js .page-header {
-    background-image: url("../img/index-background-tablet@1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-background-tablet@2x.jpg");
-    }
-  }
-
-  .webp .page-header {
-    background-image: url("../img/index-background-tablet@1x.webp");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-background-tablet@2x.webp");
-    }
-  }
-
   .page-header__logo {
     margin-top: 3px;
     margin-left: 0;
@@ -383,6 +344,10 @@
     }
   }
 
+  .page-header__mail span {
+    display: none;
+  }
+
   .page-header__mail-svg {
     width: 26px;
     height: 19px;
@@ -399,6 +364,10 @@
     &::after {
       display: none;
     }
+  }
+
+  .page-header__phone span {
+    display: none;
   }
 
   .page-header__phone-svg {
@@ -467,23 +436,6 @@
     background-size: 100% auto;
   }
 
-  .no-webp .page-header,
-  .no-js .page-header {
-    background-image: url("../img/index-background-mobile@1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-background-mobile@2x.jpg");
-    }
-  }
-
-  .webp .page-header {
-    background-image: url("../img/index-background-mobile@1x.webp");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-background-mobile@2x.webp");
-    }
-  }
-
   .page-header__wrapper {
     margin-bottom: 0;
     padding-bottom: 231px;
@@ -510,16 +462,6 @@
     display: none;
   }
 
-  .no-js .page-header__logo {
-    width: 38px;
-    height: 38px;
-    background-image: url("../img/logo.svg");
-
-    & img {
-      display: none;
-    }
-  }
-
   .page-header__logo {
     width: 38px;
     height: 38px;
@@ -539,7 +481,6 @@
   .page-header__phone {
     margin-top: 5px;
     margin-left: 8%;
-    text-decoration: none;
   }
 
   .page-header__info {

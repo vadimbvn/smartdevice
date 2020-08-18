@@ -7,13 +7,7 @@
     <link rel="preload" href="fonts/PTMononormal.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/robotonormal.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/robotobold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/PTMononormal.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/robotonormal.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/robotobold.woff" type="font/woff" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
-    <script>
-      document.documentElement.classList.remove("no-js");
-    </script>
   </head>
   <body>
     <div style="display: none;">
@@ -23,19 +17,17 @@
       <div class="container">
         <div class="page-header__wrapper">
           <a class="page-header__logo">
-            <img class="lazyload" data-src="img/logo-header.svg" width="202" height="52" alt="Логотип Smart device">
+            <img class="lazyload" src="img/logo-header.svg" width="202" height="52" alt="Логотип Smart device">
           </a>
           <a class="page-header__mail" href="mailto:info@sd.ru">
-            <svg class="page-header__mail-svg" width="26" height="19" aria-label="Написать нам">
-              <use xlink:href="img/sprite.svg#icon-envelope"></use>
-            </svg>
+            <svg class="page-header__mail-svg" width="26" height="19" aria-label="Написать нам"><use xlink:href="img/sprite.svg#icon-envelope"></use></svg>
+            <span>info@sd.ru</span>
           </a>
           <a class="page-header__phone" href="tel:+74950005252">
-            <svg class="page-header__phone-svg" width="24" height="24" aria-label="Позвонить нам">
-              <use xlink:href="img/sprite.svg#icon-phone-call"></use>
-            </svg>
+            <svg class="page-header__phone-svg" width="24" height="24" aria-label="Позвонить нам"><use xlink:href="img/sprite.svg#icon-phone-call"></use></svg>
+            <span> +7 (495) 000 52 52 </span>
           </a>
-          <button class="page-header__call-button" type="button" value="order-call">Заказать звонок</button>
+          <a class="page-header__call-button" href="#">Заказать звонок</a>
         </div>
         <div class="page-header__info">
           <h1>Печатные платы</h1>
@@ -144,7 +136,7 @@
         <div class="page-footer__social">
           <div class="page-footer__social-wrapper">
             <a class="page-footer__logo">
-              <img class="lazyload" data-src="img/logo-footer.svg" width="216" height="52" alt="Логотип Smart Device">
+              <img class="lazyload" src="img/logo-footer.svg" width="216" height="52" alt="Логотип Smart Device">
             </a>
             <p>1998-2018 SD Service Divices</p>
             <ul class="social page-footer__social-list">
@@ -179,7 +171,7 @@
           <ul class="page-footer__accordion-list">
             <li class="sub page-footer__accordion-sub">
               <h2>Разделы сайта</h2>
-              <span class="page-footer__accordion-link"></span>
+              <button class="page-footer__accordion-link" type="button"></button>
               <ul class="sub__list">
                 <li class="sub__item">
                   <a class="sub__link" href="#about-company">О компании</a>
@@ -206,7 +198,7 @@
             </li>
             <li class="sub page-footer__accordion-sub page-footer__accordion-sub--margin-left">
               <h2>Наш офис</h2>
-              <span class="page-footer__accordion-link page-footer__accordion-link--margin-top"></span>
+              <button class="page-footer__accordion-link page-footer__accordion-link--margin-top" type="button"></button>
               <ul class="sub__list">
                 <li class="sub__item">
                   <p>г. Мытищи, Олимпийский проспект, д.10</p>
@@ -229,7 +221,7 @@
         <div class="page-footer__agreement-wrapper container">
           <p>Все права защищены</p>
           <a class="page-footer__link-agreement" href="#">Условия конфиденциальности</a>
-          <p>Developed by wow studio</p>
+          <a class="page-footer__link-studio" href="#">Developed by wow studio</a>
         </div>
       </div>
     </footer>
@@ -257,6 +249,9 @@
         <button class="modal__close-button" type="button">Закрыть</button>
       </div>
     </section>
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
     <script defer src="js/vendor.js"></script>
     <script defer src="js/main.js"></script>
   </body>

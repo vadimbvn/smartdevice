@@ -71,23 +71,6 @@
   }
 }
 
-.no-webp .feedback__form::before,
-.no-js .feedback__form::before {
-  background-image: url("../img/airplane-desktop@1x.png");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/airplane-desktop@2x.png");
-  }
-}
-
-.webp .feedback__form::before {
-  background-image: url("../img/airplane-desktop@1x.webp");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/airplane-desktop@2x.webp");
-  }
-}
-
 .feedback__wrapper h2 {
   @include roboto;
   width: 570px;

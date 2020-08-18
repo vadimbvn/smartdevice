@@ -21,23 +21,6 @@
   }
 }
 
-.no-webp .company,
-.no-js .company {
-  background-image: url("../img/year-desktop@1x.png");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/year-desktop@2x.png");
-  }
-}
-
-.webp .company {
-  background-image: url("../img/year-desktop@1x.webp");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/year-desktop@2x.webp");
-  }
-}
-
 .company h2 {
   @include roboto;
   margin-top: 0;
@@ -126,6 +109,7 @@
 
   .company span {
     display: inline-block;
+    vertical-align: center;
   }
 
   .company p:last-of-type {

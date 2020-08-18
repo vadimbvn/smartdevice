@@ -6,6 +6,11 @@
   height: 110px;
 }
 
+
+.sub__item {
+  margin-right: 3%;
+}
+
 .sub p {
   @include mono;
   position: relative;
@@ -109,10 +114,5 @@
   .sub__list {
     display: none;
     overflow: hidden;
-  }
-
-  .no-js .sub__list {
-    display: block;
-    overflow: visible;
   }
 }

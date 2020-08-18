@@ -1,0 +1,164 @@
+.no-js .company {
+  background-image: url("../img/year-desktop@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/year-desktop@2x.png");
+  }
+}
+
+.no-js .feedback__form::before {
+  background-image: url("../img/paper_airplane@@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/paper_airplane@2x.png");
+  }
+}
+
+.no-js .page-header {
+  background-image: url("../img/index-background-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-desktop@2x.jpg");
+  }
+}
+
+
+.no-js .page-header__wrapper-block::before {
+  background-image: url("../img/motherboard@1x.png"), url("../img/2-triangle.svg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/motherboard@2x.png"), url("../img/2-triangle.svg");
+  }
+}
+
+.no-js .page-header__logo img {
+  display: none;
+}
+
+.no-js .page-header__logo {
+  width: 202px;
+  height: 52px;
+  background-image: url("../img/logo-header.svg");
+}
+
+.no-js .product-list__link--production {
+  background-image: url("../img/product-background-desktop-1@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/product-background-desktop-1@2x.png");
+  }
+}
+
+.no-js .product-list__link--installation {
+  background-image: url("../img/product-background-desktop-2@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/product-background-desktop-2@2x.png");
+  }
+}
+
+.no-js .product-list__link--components {
+  background-image: url("../img/product-background-desktop-3@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/product-background-desktop-3@2x.png");
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .no-js .feedback::before {
+    display: none;
+  }
+
+  .no-js .page-header {
+    background-image: url("../img/index-background-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-tablet@2x.jpg");
+    }
+  }
+
+  .no-js .product-list__link--production {
+    background-image: url("../img/product-background-tablet-1@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-tablet-1@2x.png");
+    }
+  }
+
+  .no-js .product-list__link--installation {
+    background-image: url("../img/product-background-tablet-2@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-tablet-2@2x.png");
+    }
+  }
+
+  .no-js .product-list__link--components {
+    background-image: url("../img/product-background-tablet-3@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-tablet-3@2x.png");
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .no-js .company {
+    background-image: none;
+  }
+
+  .no-js .page-header {
+    background-image: url("../img/index-background-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+  }
+
+  .no-js .page-header__logo {
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/logo.svg");
+
+    & img {
+      display: none;
+    }
+  }
+
+  .no-js .product-list__link--production {
+    background-image: url("../img/product-background-mobile-1@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-mobile-1@2x.png");
+    }
+  }
+
+  .no-js .product-list__link--installation {
+    background-image: url("../img/product-background-mobile-2@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-mobile-2@2x.png");
+    }
+  }
+
+  .no-js .product-list__link--components {
+    background-image: url("../img/product-background-mobile-3@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-mobile-3@2x.png");
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .no-js .page-footer__accordion .sub > .page-footer__accordion-link::before,
+  .no-js .page-footer__accordion .sub > .page-footer__accordion-link.active::before {
+    display: none;
+  }
+
+  .no-js .sub__list {
+    display: block;
+    overflow: visible;
+  }
+}

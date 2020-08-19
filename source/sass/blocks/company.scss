@@ -59,16 +59,17 @@
   display: block;
   width: 180px;
   height: 45px;
-  margin-top: 38px;
+  margin-top: 44px;
   margin-bottom: 30px;
-  margin-left: 21.7%;
+  margin-left: 21.5%;
   padding-top: 14px;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
-  color: $white;
+  color: $blue-color;
   text-decoration: none;
-  background-color: $blue-color;
+  border: 1px solid $blue-color;
+  background-color: transparent;
   cursor: pointer;
 
   &:active {
@@ -109,7 +110,7 @@
 
   .company span {
     display: inline-block;
-    vertical-align: center;
+    vertical-align: middle;
   }
 
   .company p:last-of-type {
@@ -117,7 +118,7 @@
   }
 
   .company__button {
-    margin-top: 18px;
+    margin-top: 25px;
     margin-left: 184px;
   }
 }
@@ -150,12 +151,12 @@
   .company p {
     min-width: 290px;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
     margin-left: 0;
   }
 
   .company__button {
-    margin-top: -12px;
+    margin-top: -14px;
     margin-left: 2px;
   }
 }

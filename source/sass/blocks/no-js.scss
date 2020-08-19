@@ -7,7 +7,7 @@
 }
 
 .no-js .feedback__form::before {
-  background-image: url("../img/paper_airplane@@1x.png");
+  background-image: url("../img/paper_airplane@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/paper_airplane@2x.png");
@@ -23,7 +23,7 @@
 }
 
 
-.no-js .page-header__wrapper-block::before {
+.no-js .page-header__wrapper::before {
   background-image: url("../img/motherboard@1x.png"), url("../img/2-triangle.svg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

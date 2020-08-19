@@ -65,6 +65,7 @@
   @include mono;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 46px;
   font-size: 13px;
   font-weight: normal;
   line-height: 24px;
@@ -83,6 +84,7 @@
   @include list-reset;
   display: flex;
   padding-left: 5.8%;
+  width: 100%;
 }
 
 .page-footer__accordion-sub {
@@ -94,9 +96,9 @@
 }
 
 .page-footer__accordion-sub--margin-left {
-  width: 350px;
-  margin-left: 16.8%;
-  margin-right: 0;
+  max-width: 350px;
+  margin-left: 14.8%;
+  padding-right: 30px;
 }
 
 .page-footer__agreement {
@@ -117,7 +119,7 @@
 .page-footer__link-agreement,
 .page-footer__link-studio {
   @include mono;
-  margin-left: 3.6%;
+  padding-left: 23px;
   font-size: 13px;
   font-weight: normal;
   line-height: 24px;
@@ -292,7 +294,7 @@
   .page-footer__agreement-wrapper {
     flex-direction: column;
     align-items: center;
-    padding-top: 16px;
+    padding-top: 20px;
     padding-bottom: 3px;
   }
 

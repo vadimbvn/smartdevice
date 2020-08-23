@@ -29,7 +29,7 @@
 .page-footer__social-wrapper p {
   @include pseudo;
   @include mono;
-  bottom: -53px;
+  bottom: -42px;
   left: 50%;
   margin-left: -33.6%;
   font-size: 13px;
@@ -65,7 +65,7 @@
   @include mono;
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 46px;
+  margin-right: 50px;
   font-size: 13px;
   font-weight: normal;
   line-height: 24px;
@@ -96,9 +96,13 @@
 }
 
 .page-footer__accordion-sub--margin-left {
-  max-width: 350px;
+  max-width: 370px;
   margin-left: 14.8%;
-  padding-right: 30px;
+  padding-right: 15px;
+}
+
+.page-footer__accordion-sub--margin-left .sub__list {
+  height: 124px;
 }
 
 .page-footer__agreement {
@@ -110,7 +114,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 14px;
+  padding-top: 5px;
   padding-bottom: 13px;
   padding-right: 1.3%;
   padding-left: 1.1%;
@@ -139,6 +143,10 @@
     color: $blue-color;
     opacity: 1;
   }
+}
+
+.page-footer__link-studio {
+  padding-right: 5px;
 }
 
 @media (max-width: $desktop-width) {
@@ -312,7 +320,7 @@
 @media (max-width: $mobile-width-only) {
   .page-footer__accordion .sub > .page-footer__accordion-link::before {
     @include pseudo;
-    top: 30px;
+    top: 32px;
     left: 50%;
     width: 16px;
     height: 16px;
@@ -322,13 +330,17 @@
     cursor: pointer;
   }
 
+  .page-footer__accordion .sub > .page-footer__accordion-link--margin-top::before {
+    margin-left: 121px;
+  }
+
   .page-footer__accordion .sub > .page-footer__accordion-link.active::before {
     @include pseudo;
-    top: 38px;
+    top: 42px;
     left: 50%;
     width: 16px;
     height: 16px;
-    margin-left: 127px;
+    margin-left: 120px;
     background-image: url("../img/minus.svg");
     background-repeat: no-repeat;
     cursor: pointer;

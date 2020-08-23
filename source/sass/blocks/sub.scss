@@ -8,15 +8,15 @@
 
 
 .sub__item {
-  margin-right: 3%;
+  margin-right: 6%;
 }
 
 .sub p {
   @include mono;
   position: relative;
-  white-space: nowrap;
   margin-top: 0;
   margin-bottom: 0;
+  width: 100%;
   font-size: 15px;
   font-weight: normal;
   line-height: 25px;
@@ -41,6 +41,7 @@
   @include mono;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: -10px;
   display: block;
   font-size: 15px;
   font-weight: normal;

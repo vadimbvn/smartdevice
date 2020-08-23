@@ -2112,7 +2112,7 @@ textarea {
   content: "";
   font-family: "PT Mono", "Courier", monospace;
   font-style: normal;
-  bottom: -53px;
+  bottom: -42px;
   left: 50%;
   margin-left: -33.6%;
   font-size: 13px;
@@ -2145,7 +2145,7 @@ textarea {
   font-style: normal;
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 46px;
+  margin-right: 50px;
   font-size: 13px;
   font-weight: normal;
   line-height: 24px;
@@ -2175,9 +2175,12 @@ textarea {
   display: none; }
 
 .page-footer__accordion-sub--margin-left {
-  max-width: 350px;
+  max-width: 370px;
   margin-left: 14.8%;
-  padding-right: 30px; }
+  padding-right: 15px; }
+
+.page-footer__accordion-sub--margin-left .sub__list {
+  height: 124px; }
 
 .page-footer__agreement {
   border-top: 1px solid rgba(27, 45, 55, 0.2); }
@@ -2192,7 +2195,7 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  padding-top: 14px;
+  padding-top: 5px;
   padding-bottom: 13px;
   padding-right: 1.3%;
   padding-left: 1.1%; }
@@ -2219,6 +2222,9 @@ textarea {
   .page-footer__link-studio:active {
     color: #00b2ff;
     opacity: 1; }
+
+.page-footer__link-studio {
+  padding-right: 5px; }
 
 @media (max-width: 1023px) {
   .page-footer__wrapper {
@@ -2359,7 +2365,7 @@ textarea {
   .page-footer__accordion .sub > .page-footer__accordion-link::before {
     position: absolute;
     content: "";
-    top: 30px;
+    top: 32px;
     left: 50%;
     width: 16px;
     height: 16px;
@@ -2367,14 +2373,16 @@ textarea {
     background-image: url("../img/plus.svg");
     background-repeat: no-repeat;
     cursor: pointer; }
+  .page-footer__accordion .sub > .page-footer__accordion-link--margin-top::before {
+    margin-left: 121px; }
   .page-footer__accordion .sub > .page-footer__accordion-link.active::before {
     position: absolute;
     content: "";
-    top: 38px;
+    top: 42px;
     left: 50%;
     width: 16px;
     height: 16px;
-    margin-left: 127px;
+    margin-left: 120px;
     background-image: url("../img/minus.svg");
     background-repeat: no-repeat;
     cursor: pointer; }
@@ -2407,15 +2415,15 @@ textarea {
   height: 110px; }
 
 .sub__item {
-  margin-right: 3%; }
+  margin-right: 6%; }
 
 .sub p {
   font-family: "PT Mono", "Courier", monospace;
   font-style: normal;
   position: relative;
-  white-space: nowrap;
   margin-top: 0;
   margin-bottom: 0;
+  width: 100%;
   font-size: 15px;
   font-weight: normal;
   line-height: 25px;
@@ -2439,6 +2447,7 @@ textarea {
   font-style: normal;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: -10px;
   display: block;
   font-size: 15px;
   font-weight: normal;
